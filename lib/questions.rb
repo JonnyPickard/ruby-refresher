@@ -21,14 +21,15 @@ end
 # 5 don't reverse the array, but reverse every word inside it. e.g.
 # ['dog', 'monkey'] becomes ['god', 'yeknom']
 def reverse_every_element_in_array(array)
-  array.map { | a | a.reverse }
+  array.map(&:reverse)
 end
 
-# given an array of student names, like ['Bob', 'Dave', 'Clive']
+# 6 given an array of student names, like ['Bob', 'Dave', 'Clive']
 # give every possible pairing - in this case:
 # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
 # make sure you don't have the same pairing twice,
 def every_possible_pairing_of_students(array)
+  array.combination(2)
 end
 
 # discard the first 3 elements of an array,
