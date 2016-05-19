@@ -38,8 +38,9 @@ def all_elements_except_first_3(array)
   array.reject.with_index { |a, b| b < 3 }
 end
 
-# add an element to the beginning of an array
+# 8 add an element to the beginning of an array
 def add_element_to_beginning_of_array(array, element)
+  array.unshift(element)
 end
 
 # sort an array of words by their last letter, e.g.
