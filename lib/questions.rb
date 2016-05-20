@@ -56,9 +56,10 @@ def get_first_half_of_string(string)
   string.slice( 0, ( string.length / 2.to_f ).ceil )
 end
 
-# turn a positive integer into a negative integer. A negative integer
+# 11 Turn a positive integer into a negative integer. A negative integer
 # stays negative
 def make_numbers_negative(number)
+  number > 0 ? number * -1 : number
 end
 
 # turn an array of numbers into two arrays of numbers, one an array of
