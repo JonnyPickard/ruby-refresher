@@ -73,7 +73,7 @@ def separate_array_into_even_and_odd_numbers(array)
   a
 end
 
-# 12 Count the numbers of elements in an element which are palindromes
+# 13 Count the numbers of elements in an element which are palindromes
 # a palindrome is a word that's the same backwards as forward
 # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
 # are 2 palindromes (bob and radar), so the method should return 2
@@ -83,11 +83,12 @@ def number_of_elements_that_are_palindromes(array)
   count
 end
 
-# return the shortest word in an array
+# 14 Return the shortest word in an array
 def shortest_word_in_array(array)
+  array.sort_by!(&:size).first
 end
 
-# return the shortest word in an array
+# 15 Return the longest word in an array
 def longest_word_in_array(array)
 end
 
