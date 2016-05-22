@@ -93,9 +93,10 @@ def longest_word_in_array(array)
   array.sort_by!(&:size).last
 end
 
-# add up all the numbers in an array, so [1, 3, 5, 6]
+# 16 Add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
 def total_of_array(array)
+  array.inject { | sum, n | sum + n }
 end
 
 # turn an array into itself repeated twice. So [1, 2, 3]
