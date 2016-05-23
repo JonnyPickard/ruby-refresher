@@ -128,10 +128,11 @@ def get_elements_until_greater_than_five(array)
   a
 end
 
-# turn an array (with an even number of elements) into a hash, by
+# 21 Turn an array (with an even number of elements) into a hash, by
 # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
 # {'a' => 'b', 'c' => 'd'}
 def convert_array_to_a_hash(array)
+  Hash[*array.flatten]
 end
 
 # get all the letters used in an array of words and return
