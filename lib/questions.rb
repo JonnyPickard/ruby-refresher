@@ -135,11 +135,12 @@ def convert_array_to_a_hash(array)
   Hash[*array.flatten]
 end
 
-# get all the letters used in an array of words and return
+# 22 Get all the letters used in an array of words and return
 # it as a array of letters, in alphabetical order
 # . e.g. the array ['cat', 'dog', 'fish'] becomes
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 def get_all_letters_in_array_of_words(array)
+  array.join.chars.sort
 end
 
 # swap the keys and values in a hash. e.g.
