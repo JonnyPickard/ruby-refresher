@@ -154,12 +154,13 @@ end
 # add all the keys and all the values together, e.g.
 # {1 => 1, 2 => 2} becomes 6
 def add_together_keys_and_values(hash)
-  hash.each_pair { | a, b | a + b }.map
+  hash.keys.reduce(&:+) + hash.values.reduce(&:+)
 end
 
-# take out all the capital letters from a string
+# 25 Take out all the capital letters from a string
 # so 'Hello JohnDoe' becomes 'ello ohnoe'
 def remove_capital_letters_from_string(string)
+  string.gsub! /[A-Z]/, ''
 end
 
 # round up a float up and convert it to an Integer,
