@@ -163,9 +163,10 @@ def remove_capital_letters_from_string(string)
   string.gsub! /[A-Z]/, ''
 end
 
-# round up a float up and convert it to an Integer,
+# 26 Round up a float up and convert it to an Integer,
 # so 3.214 becomes 4
 def round_up_number(float)
+  float.ceil
 end
 
 # round down a float up and convert it to an Integer,
